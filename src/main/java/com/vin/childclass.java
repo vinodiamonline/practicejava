@@ -1,4 +1,4 @@
-package com.adobe.platform.vintest1;
+package com.vin;
 
 public class childclass extends parentclass {
 	int x = 10;

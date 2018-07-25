@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.adobe.platform</groupId>
-  <artifactId>vintest1</artifactId>
+  <groupId>com.vin</groupId>
+  <artifactId>practicejava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>vintest1</name>
+  <name>practicejava</name>
   <url>http://maven.apache.org</url>
 
   <properties>

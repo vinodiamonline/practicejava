@@ -1,4 +1,4 @@
-package com.adobe.platform.vintest1;
+package com.vin;
 
 public class GCFinalize {
 	public static int count = 0;
