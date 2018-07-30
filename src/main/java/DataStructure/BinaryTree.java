@@ -3,17 +3,20 @@ package DataStructure;
 class Node {
 	int item;
 	Node left, right;
+
 	public Node(int key) {
 		this.item = key;
 		left = right = null;
 	}
 }
 
-public class BinaryTree {	
+public class BinaryTree {
 	Node root;
+
 	public BinaryTree() {
 		root = null;
 	}
+
 	public void addElement(int item) {
 		Node newNode = new Node(item);
 		Node n = this.root;
@@ -22,7 +25,7 @@ public class BinaryTree {
 			return;
 		}
 		Node prevNode = n;
-		while(n !=null) {
+		while (n != null) {
 			prevNode = n;
 			if (item > n.item) {
 				n = n.right;
@@ -36,11 +39,14 @@ public class BinaryTree {
 			prevNode.left = newNode;
 		}
 	}
+
 	public void printInOrder() {
 		inOrder(this.root);
 	}
+
 	private void inOrder(Node n) {
-		if (n == null) return;
+		if (n == null)
+			return;
 		if (n.left != null && n.right != null) {
 			inOrder(n.left);
 			System.out.println(n.item);
@@ -57,11 +63,17 @@ public class BinaryTree {
 			inOrder(n.right);
 			return;
 		}
-			
+
 		System.out.println(n.item);
 	}
+
+	public void deletefromminmax(int min, int max) {
+		deleteleftandrightwithminmaxvalue(root, min, max);
+	}
+
 	private void deleteleftandrightwithminmaxvalue(Node n, int min, int max) {
-		if (n == null) return;
+		if (n == null)
+			return;
 		if (n.left != null && n.right != null) {
 			inOrder(n.left);
 			System.out.println(n.item);
@@ -78,9 +90,7 @@ public class BinaryTree {
 			inOrder(n.right);
 			return;
 		}
-			
+
 		System.out.println(n.item);
 	}
 }
-
-

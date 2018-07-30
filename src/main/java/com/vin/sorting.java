@@ -2,11 +2,8 @@ package com.vin;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class sorting {
 	public void MyArray(int[] a1) {

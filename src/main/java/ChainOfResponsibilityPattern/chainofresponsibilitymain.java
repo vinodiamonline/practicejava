@@ -13,6 +13,7 @@ public class chainofresponsibilitymain {
 			days = input.nextInt();
 			// process the request
 			d.d1.GetValue(new mycalender(days));
+			input.close();
 		}
 	}
 }

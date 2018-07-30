@@ -48,9 +48,6 @@ public class ClassToBeSerialized implements Serializable{
 	public int getTeacher() {
 		return teacher;
 	}
-	public void setTeacher(int teacher) {
-		this.teacher = teacher;
-	}
 	public int getPinnumber() {
 		return pinnumber;
 	}

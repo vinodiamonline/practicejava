@@ -1,8 +1,5 @@
 package FlyweightPattern;
 
-import java.util.Date;
-import java.util.Timer;
-
 public class flyweightmain {
 	public static void main (String[] args) {
 		fruitfactory f = new fruitfactory();

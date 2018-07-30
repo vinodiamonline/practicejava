@@ -6,6 +6,7 @@ public class GCFinalize {
 	public void runmethod() {
 		for (int i = 0; i< 1000; i++) {
 			GCFinalize g = new GCFinalize();
+			System.out.println(g.toString());
 			g = null;
 		}
 	}

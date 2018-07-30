@@ -1,10 +1,7 @@
 package com.vin;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
 
 public class setornotset {
 	public static void main (String args[]) {

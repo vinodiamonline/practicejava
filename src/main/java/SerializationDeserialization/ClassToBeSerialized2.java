@@ -75,9 +75,6 @@ public class ClassToBeSerialized2 extends ParentSerialized2 implements Serializa
 	public int getTeacher() {
 		return teacher;
 	}
-	public void setTeacher(int teacher) {
-		this.teacher = teacher;
-	}
 	public int getPinnumber() {
 		return pinnumber;
 	}

@@ -50,9 +50,7 @@ public class App
  
     	childclass c  = new childclass();
     	c.m1(10);
-    	
-    	childclass c1 = new childclass();
-    	
+    	 	
     	System.out.println(c.x);
     	System.out.println(c.getparentx());
     	System.out.println(c.getx());
