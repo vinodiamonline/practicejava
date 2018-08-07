@@ -20,5 +20,13 @@ public class BinaryTreeMain {
 		b.addElement(90);
 
 		b.printInOrder();
+
+		int itemtodelete = 6;
+		
+		b.deleteNode(itemtodelete);
+		
+		b.printInOrder();
+		
+		System.out.println(b.findelement(itemtodelete));
 	}
 }
