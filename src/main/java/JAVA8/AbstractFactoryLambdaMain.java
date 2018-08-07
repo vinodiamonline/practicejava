@@ -2,7 +2,12 @@ package JAVA8;
 
 public class AbstractFactoryLambdaMain {
 	public static void main(String args[]) {
-		VehicleFactory v1 = v->v.getVehicleInstance();
+		// Approach 1
+		System.out.println("No Of Wheels of car = " + VehicleFactory.getVehicleInstance(new CarFactory()).getNoOfWheels());
+		System.out.println("No Of Wheels of Truck = " + VehicleFactory.getVehicleInstance(new TruckFactory()).getNoOfWheels());	
+		
+		// Approach 2
+		VehicleFactory2 v1 = v->v.getVehicleInstance();
 		System.out.println("Wheel of Car = " + v1.getVehicleInstance(new CarFactory()).getNoOfWheels());
 		System.out.println("Wheel of Truck = " + v1.getVehicleInstance(new TruckFactory()).getNoOfWheels());
 		System.out.println("Wheel of Auto = " + v1.getVehicleInstance(new AutoFactory()).getNoOfWheels());
@@ -20,8 +25,14 @@ interface VehicleFactoryInterface {
 	public abstract VehicleInterface getVehicleInstance();
 }
 
+class VehicleFactory {
+	public static VehicleInterface getVehicleInstance(VehicleFactoryInterface v) {
+		return v.getVehicleInstance();
+	}
+}
+
 @FunctionalInterface
-interface VehicleFactory {
+interface VehicleFactory2 {
 	public abstract VehicleInterface getVehicleInstance(VehicleFactoryInterface v);
 }
 
