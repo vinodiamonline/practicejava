@@ -36,7 +36,7 @@ public class ComparatorAndComparable {
 		
 		
 		Collections.sort(l2, (student1,student2) -> student1.getRollnumber() > student2.getRollnumber() ? 1 : -1);
-
+		Collections.sort(l2, (student1,student2) -> student1.getRollnumber() < student2.getRollnumber() ? 1 : -1);
 		
 		l2.forEach(x-> System.out.println(x.getName()));
 
